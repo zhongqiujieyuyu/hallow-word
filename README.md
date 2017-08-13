@@ -1,2 +1,2 @@
 # hallow-word
-my first project
+my first project v1.0.0
