@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>充值支付</title>
+
+
+    <script charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="css/reveal.css">
+
+    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+</head>
+<style>
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+    body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+    td,th,caption { font-size:14px; }
+    h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+    address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+    a { color:#555; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    img { border:none; }
+    ol,ul,li { list-style:none; }
+    input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+    table { border-collapse:collapse; }
+    html {overflow-y: scroll;}
+    /* css common */
+    .lt{
+        float: left;
+    }
+    .rt{
+        float: right;
+    }
+    .clear:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+    .clear { *zoom:1;_zoom:1; }
+    .dn{
+        display: none!important;
+    }
+    .container select {
+        width: 160px;
+        height: 32px;
+        border-radius: 3px;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/pay_money.css" />
+<body>
+    <div class="wrap">
+            <div class="both-path">
+                <form  id="my_form" method="post" action="post.php/post1/alipay" >
+                    <p class="top-tit">充值/支付页面</p>
+                    <p>商户：美滴滴测试</p>
+                    <p>编号：TEST0001</p>
+                    <p>商品：余额充值</p>
+                    <p>
+                        金额：
+                        <input name="price" class="money-input" type="text" />
+                    </p>
+                    <p><input type="submit" value="去支付(支付宝)"></p>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
